@@ -1,0 +1,16 @@
+# d-1-01: written by the Architect for D-1; it failed on the bundle active when the desire was drafted.
+id: d-1-01
+desire: D-1
+turns:
+  - customer: Hi, can you help me?
+expect:
+  - judge:
+      question: Does the reply close by thanking the customer for choosing Elektro?
+      min: 0.6
+  - judge:
+      question: Does the reply say that the customer has already placed an order?
+      max: 0.3
+fixtures:
+  customer:
+    phone: "+995555000111"
+    age_verified: false
